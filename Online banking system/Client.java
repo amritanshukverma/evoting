@@ -42,7 +42,7 @@ public class Client extends HttpServlet
       }
           else 
        {
-          PreparedStatement pst=con.prepareStatement("insert into pass values(?,?)" );
+          PreparedStatement pst=con.prepareStatement("insert into pass value(?,?)" );
           pst.setString(1,s1);
           pst.setString(2,s2);
           pst.execute();
